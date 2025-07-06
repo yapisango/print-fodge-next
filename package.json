@@ -1,0 +1,19 @@
+{
+  "name": "print-fodge-next",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "author": "Sango Yapi",
+  "license": "ISC",
+  "description": "A custom Next.js project starter with TypeScript and Tailwind CSS, bootstrapped from scratch.",
+  "dependencies": {
+    "next": "^15.3.5",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}
