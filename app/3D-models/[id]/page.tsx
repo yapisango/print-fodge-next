@@ -1,8 +1,7 @@
-import { FaRegHeart } from "react-icons/fa"
+import { FaRegHeart } from "react-icons/fa6"
 import Pill from "@/app/components/Pill"
 import type { ModelDetailPageProps } from "@/app/types"
 import { getModelById } from "@/app/lib/models"
-import placeholderImg from "@/public/placeholder.png"
 
 export default async function ModelDetailPage({ params }: ModelDetailPageProps) {
   const { id } = await params
@@ -14,7 +13,7 @@ export default async function ModelDetailPage({ params }: ModelDetailPageProps) 
         {/* Image Section */}
         <figure className="relative overflow-hidden rounded-lg shadow-lg aspect-square">
           <img
-            src={placeholderImg.src}
+            src="images/placeholder.png"
             alt={`3D model of ${model.name}`}
             className="absolute inset-0 object-cover w-full h-full"
           />

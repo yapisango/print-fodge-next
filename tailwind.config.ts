@@ -7,10 +7,15 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "orange-accent": "#F77D36",
+      },
+    },
   },
   plugins: [],
 };
 
 export default config;
+
 

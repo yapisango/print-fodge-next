@@ -1,5 +1,3 @@
-import HeroImageSquare from "@/public/images/home-hero.png"
-
 export default function AboutPage() {
     return (
         <main>
@@ -12,7 +10,7 @@ export default function AboutPage() {
                     <div className="relative h-[300px] w-full">
 
                         <img
-                            src={HeroImageSquare.src}
+                            src="/images/home-hero.png"
                             alt="PrintForge Community - A group of makers collaborating on 3D printing projects"
                             className="absolute inset-0 w-full h-full object-cover rounded-lg"
                         />

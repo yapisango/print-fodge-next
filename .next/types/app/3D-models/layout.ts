@@ -1,8 +1,8 @@
-// File: C:\sangos-projects\print-fodge-next\app\3D-models\layout.tsx
-import * as entry from '../../../../app/3D-models/layout.js'
+// File: C:\sangos-projects\print-fodge-next\app\3d-models\layout.tsx
+import * as entry from '../../../../app/3d-models/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
-type TEntry = typeof import('../../../../app/3D-models/layout.js')
+type TEntry = typeof import('../../../../app/3d-models/layout.js')
 
 type SegmentParams<T extends Object = any> = T extends Record<string, any>
   ? { [K in keyof T]: T[K] extends string ? string | string[] | undefined : never }

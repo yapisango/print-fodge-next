@@ -47,8 +47,14 @@ export type CategoriesData = {
 }
 
 
-export type categoryPageProps = {
+export type CategoryPageProps = {
   params: Promise<{
     categoryName: string;
   }>
 };
+
+export type NavLinkProps = {
+    href: string
+    children: ReactNode
+    isActive?: boolean
+}
