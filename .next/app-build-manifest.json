@@ -21,10 +21,20 @@
       "static/chunks/main-app.js",
       "static/chunks/app/3d-models/page.js"
     ],
-    "/about/page": [
+    "/3d-models/categories/[categoryName]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/about/page.js"
+      "static/chunks/app/3d-models/categories/[categoryName]/page.js"
+    ],
+    "/3d-models/[id]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/3d-models/[id]/page.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/_not-found/page.js"
     ]
   }
 }

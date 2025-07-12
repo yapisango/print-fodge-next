@@ -46,11 +46,15 @@ export type CategoriesData = {
     categories: Category[]
 }
 
+export type GetModelsParams = {
+    category?: string
+}
+
 
 export type CategoryPageProps = {
-  params: Promise<{
+  params: {
     categoryName: string;
-  }>
+  }
 };
 
 export type NavLinkProps = {
