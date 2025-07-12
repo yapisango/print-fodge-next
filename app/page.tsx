@@ -1,4 +1,5 @@
-import Link from "next/dist/client/link"
+import Link from "next/link"
+import HeroImage from "@/public/hero-image.png"
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <img src="images/hero-image.png" alt="Home page image" className="w-[350px] h-auto rounded-lg" />
+        <img src={HeroImage.src} className="w-[350px] h-auto rounded-lg" alt="Hero Image" />
       </section>
     </main>
   )

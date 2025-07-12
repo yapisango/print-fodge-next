@@ -1,11 +1,11 @@
-import "./globals.css"
-import Link from "next/link"
+import "./globals.css";
+import type { RootLayoutProps } from "@/app/types"
 import { Albert_Sans, Montserrat_Alternates } from "next/font/google"
+import Navbar from "@/app/components/Navbar"
 
 const albertSans = Albert_Sans({
   subsets: ["latin"],
-  display: "swap",
-  variable: "--font-albert-sans",
+  display: "swap"
 })
 
 const montserratAlternates = Montserrat_Alternates({
@@ -15,40 +15,11 @@ const montserratAlternates = Montserrat_Alternates({
   variable: "--font-montserrat-alternates"
 })
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en"
-        className={`${montserratAlternates.variable} ${albertSans.variable}`}
-      >
-      <body>
-        <header className="w-full bg-white">
-          <nav className="flex justify-between px-6 py-4">
-            <Link href="/">
-            <div className="flex items-center">
-              {/* Desktop logo */}
-              <img
-                src="images/printforge-logo.svg"
-                alt="PrintForge Logo"
-                className="w-[200px] h-auto hidden md:block object-contain"
-              />
-              {/* Mobile logo */}
-              <img
-                src="images/printforge-logo-icon.svg"
-                alt="PrintForge Logo"
-                className="w-[40px] h-auto block md:hidden object-contain"
-              />
-            </div>
-            </Link>
-            <ul className="flex items-center gap-2.5">
-              <li><Link href="/3d-models">3D Models</Link></li>
-              <li><Link href="/about">AboutPage</Link></li>
-            </ul>
-          </nav>
-        </header>
+    <html lang="en">
+      <body className={`${albertSans.className} ${montserratAlternates.variable}`}>
+        <Navbar />
         {children}
       </body>
     </html>
